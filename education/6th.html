@@ -22,6 +22,16 @@
                             }
                         },
                     },
+                    screens: {
+                    'tablet': '640px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'laptop': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'desktop': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+                    },
                 }
             }
         }
@@ -110,11 +120,11 @@
         </div>
     </div>
     <div class="py-3 bg-gradient-to-b from-lime-400 to-emerald-950"></div>
-    <div class="bg-emerald-950 py-10 pl-40"> 
-        <div class="grid grid-cols-3 mx-[400px] selection:bg-lime-400 selection:text-emerald-900">
-            <div class=" text-emerald-100 font-bold item">
+    <div class="bg-emerald-950 desktop:bg-emerald-950 py-10 pl-10 desktop:pl-40 tablet:bg-red-950 laptop:bg-yellow-400 "> 
+        <div class="grid grid-cols-3 desktop:mx-[400px] selection:bg-lime-400 selection:text-emerald-900">
+            <div class=" text-emerald-100 font-bold item text-base desktop:text-base">
                 Service
-                <ul class=" flex flex-col font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900 dark:border-emerald-700"> 
+                <ul class=" flex flex-col font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900 dark:border-emerald-700 text-sm desktop:text-base"> 
                     <li class="mt-5 ml-0.5 ">
                         <p class="text-lime-400">
                             Game Development
@@ -142,7 +152,7 @@
             </div>
             <div class=" text-emerald-100 font-bold">
                 Need Help?
-                <ul class=" flex flex-col font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900 dark:border-emerald-700"> 
+                <ul class=" flex flex-col font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900 dark:border-emerald-700 text-sm desktop:text-base"> 
                     <li class="mt-5 ml-0.5 ">
                         <p class="text-lime-400">
                             Call Me:
@@ -164,10 +174,10 @@
                     Connect with me
                 </p>
                 <div class="grid grid-rows-2 gap-5">
-                    <ul class=" flex flex-row font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900 dark:border-emerald-700"> 
-                        <li class="mt-5 ml-0.5 size-8 " style="background-color: aquamarine;"></li>
-                        <li class="mt-5 ml-5 size-8 " style="background-color: aquamarine;"></li>
-                        <li class="mt-5 ml-5 size-8 " style="background-color: aquamarine;"></li>
+                    <ul class=" flex flex-row font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900  dark:border-emerald-700 text-sm desktop:text-base"> 
+                        <li class="mt-5 ml-0.5 size-6 desktop:size-8" style="background-color: rgb(200, 218, 212);"></li>
+                        <li class="mt-5 ml-5 size-6 desktop:size-8 " style="background-color: aquamarine;"></li>
+                        <li class="mt-5 ml-5 size-6 desktop:size-8 " style="background-color: aquamarine;"></li>
                     </ul>
                     <div class="text-xs">
                         © 2024 BrioAmarta, Inc. All Rights Reserved
@@ -175,7 +185,6 @@
                 </div>
             </div>
         </div>
-    </div>  
-    </section>
+    </div>
 </body>
 </html>

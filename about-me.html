@@ -22,6 +22,16 @@
                             }
                         },
                     },
+                    screens: {
+                    'tablet': '640px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'laptop': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'desktop': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+                    },
                 }
             }
         }
@@ -79,7 +89,7 @@
     </div>
     <div class="bg-emerald-950 pt-20">
         <div class="pb-24 font-medium  rounded-lg bg-emerald-950 ">
-            <div class=" flex mx-auto w-6/12 h-full border-slate-100 shadow-md shadow-lime-300 rotate-180 bg-emerald-500 rounded-lg">   
+            <div class=" flex mx-auto w-5/6 desktop:w-6/12 h-full border-slate-100 shadow-md shadow-lime-300 rotate-180 bg-emerald-500 rounded-lg">   
                 <div class=" border-slate-100 shadow-md shadow-lime-300 rotate-180 bg-emerald-500 rounded-lg">        
                     <div class=" text-center mb-10 text-emerald-200 selection:bg-lime-400 selection:text-emerald-900">
                         <section>                            
@@ -94,7 +104,7 @@
                                 As you explore my portfolio, I invite you to immerse yourself in the projects I've worked on, each a testament to my dedication to the craft of game development. Thank you for visiting, and I hope my work inspires you as much as it has inspired me. Let's embark on this journey together, where creativity knows no bounds, and the possibilities are endless.
                             </h3>
                             <br><br>
-                            <h1 class="text-4xl">
+                            <h1 class="text-3xl desktop:text-4xl">
                             ~~~Greets Card~~~
                             </h1>
                         </section>
@@ -104,11 +114,11 @@
         </div>  
     </div>    
     <div class="py-3 bg-gradient-to-b from-lime-400 to-emerald-950"></div>
-    <div class="bg-emerald-950 py-10 pl-40"> 
-        <div class="grid grid-cols-3 mx-[400px] selection:bg-lime-400 selection:text-emerald-900">
-            <div class=" text-emerald-100 font-bold item">
+    <div class="bg-emerald-950 desktop:bg-emerald-950 py-10 pl-10 desktop:pl-40 tablet:bg-red-950 laptop:bg-yellow-400 "> 
+        <div class="grid grid-cols-3 desktop:mx-[400px] selection:bg-lime-400 selection:text-emerald-900">
+            <div class=" text-emerald-100 font-bold item text-base desktop:text-base">
                 Service
-                <ul class=" flex flex-col font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900 dark:border-emerald-700"> 
+                <ul class=" flex flex-col font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900 dark:border-emerald-700 text-sm desktop:text-base"> 
                     <li class="mt-5 ml-0.5 ">
                         <p class="text-lime-400">
                             Game Development
@@ -136,7 +146,7 @@
             </div>
             <div class=" text-emerald-100 font-bold">
                 Need Help?
-                <ul class=" flex flex-col font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900 dark:border-emerald-700"> 
+                <ul class=" flex flex-col font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900 dark:border-emerald-700 text-sm desktop:text-base"> 
                     <li class="mt-5 ml-0.5 ">
                         <p class="text-lime-400">
                             Call Me:
@@ -158,10 +168,10 @@
                     Connect with me
                 </p>
                 <div class="grid grid-rows-2 gap-5">
-                    <ul class=" flex flex-row font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900 dark:border-emerald-700"> 
-                        <li class="mt-5 ml-0.5 size-8 " style="background-color: aquamarine;"></li>
-                        <li class="mt-5 ml-5 size-8 " style="background-color: aquamarine;"></li>
-                        <li class="mt-5 ml-5 size-8 " style="background-color: aquamarine;"></li>
+                    <ul class=" flex flex-row font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900  dark:border-emerald-700 text-sm desktop:text-base"> 
+                        <li class="mt-5 ml-0.5 size-6 desktop:size-8" style="background-color: rgb(200, 218, 212);"></li>
+                        <li class="mt-5 ml-5 size-6 desktop:size-8 " style="background-color: aquamarine;"></li>
+                        <li class="mt-5 ml-5 size-6 desktop:size-8 " style="background-color: aquamarine;"></li>
                     </ul>
                     <div class="text-xs">
                         © 2024 BrioAmarta, Inc. All Rights Reserved
@@ -169,7 +179,6 @@
                 </div>
             </div>
         </div>
-    </div>     
-    </div>
+    </div>   
 </body>
 </html>

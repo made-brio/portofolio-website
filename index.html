@@ -21,6 +21,16 @@
                                 transform: 'rotate(5deg)'
                             }
                         },
+                    },                    
+                    screens: {
+                    'tablet': '640px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'laptop': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'desktop': '1280px',
+                    // => @media (min-width: 1280px) { ... }
                     },
                 }
             }
@@ -78,31 +88,31 @@
     <div class="py-3 bg-gradient-to-b from-lime-400 to-emerald-950"></div>
     </div>
     <div class="bg-emerald-950 py-52 mx-auto">     
-            <div class=" pb-10 mx-[365px] flex flex-row font-medium mt-4 rounded-lg bg-emerald-950 ">                
-                <div class="bg-cover bg-center size-56 my-10 ml-14 rounded-full transition-all " style="background-image: url(/asset/home-pic.jpg)">
+            <div class=" pb-10 desktop:mx-[365px] flex flex-row font-medium mt-4 rounded-lg bg-emerald-950 ">                
+                <div class="bg-cover bg-center rounded-full size-32 ml-10 desktop:size-56 desktop:my-10 desktop:ml-14 transition-all " style="background-image: url(/asset/home-pic.jpg)">
                     <div class="w-full h-full border shadow-lg rounded-full shadow-lime-300 animate-pulse">
                     </div>
                 </div>                
                 <div>
-                    <h1 class="translate-y-3 translate-x-5 text-9xl text-center mt-20  selection:bg-lime-400 selection:text-emerald-900">
-                        <span class=" mt-10 ml-2 bg-gradient-to-br from-yellow-300 to-rose-500 bg-clip-text text-transparent">
+                    <h1 class="text-5xl -translate-y-10 desktop:translate-y-3 desktop:translate-x-5 desktop:text-9xl text-center mt-20  selection:bg-lime-400 selection:text-emerald-900">
+                        <span class=" ml-3 desktop:mt-10 desktop:ml-2 bg-gradient-to-br from-yellow-300 to-rose-500 bg-clip-text text-transparent">
                             Hello There
                         </span>                        
                     </h1>     
                 </div>
                 <div class="animate-goyang transition-all duration-[5000ms] ease-in-out origin-bottom over  selection:bg-lime-400 selection:text-emerald-900">
-                    <h1 class="translate-y-2 translate-x-10 text-9xl text-center mt-20 ">               
+                    <h1 class=" text-5xl translate-y-9 px-5 desktop:translate-y-2 desktop:translate-x-10  desktop:text-9xl text-center desktop:mt-20 ">               
                             🖐                        
                     </h1>     
                 </div>
             </div>            
     </div>    
     <div class="py-3 bg-gradient-to-b from-lime-400 to-emerald-950"></div>
-    <div class="bg-emerald-950 py-10 pl-40"> 
-        <div class="grid grid-cols-3 mx-[400px] selection:bg-lime-400 selection:text-emerald-900">
-            <div class=" text-emerald-100 font-bold item">
+    <div class="bg-emerald-950 desktop:bg-emerald-950 py-10 pl-10 desktop:pl-40 tablet:bg-red-950 laptop:bg-yellow-400 "> 
+        <div class="grid grid-cols-3 desktop:mx-[400px] selection:bg-lime-400 selection:text-emerald-900">
+            <div class=" text-emerald-100 font-bold item text-base desktop:text-base">
                 Service
-                <ul class=" flex flex-col font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900 dark:border-emerald-700"> 
+                <ul class=" flex flex-col font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900 dark:border-emerald-700 text-sm desktop:text-base"> 
                     <li class="mt-5 ml-0.5 ">
                         <p class="text-lime-400">
                             Game Development
@@ -130,7 +140,7 @@
             </div>
             <div class=" text-emerald-100 font-bold">
                 Need Help?
-                <ul class=" flex flex-col font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900 dark:border-emerald-700"> 
+                <ul class=" flex flex-col font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900 dark:border-emerald-700 text-sm desktop:text-base"> 
                     <li class="mt-5 ml-0.5 ">
                         <p class="text-lime-400">
                             Call Me:
@@ -152,10 +162,10 @@
                     Connect with me
                 </p>
                 <div class="grid grid-rows-2 gap-5">
-                    <ul class=" flex flex-row font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900 dark:border-emerald-700"> 
-                        <li class="mt-5 ml-0.5 size-8 " style="background-color: rgb(200, 218, 212);"></li>
-                        <li class="mt-5 ml-5 size-8 " style="background-color: aquamarine;"></li>
-                        <li class="mt-5 ml-5 size-8 " style="background-color: aquamarine;"></li>
+                    <ul class=" flex flex-row font-medium  border-emerald-100 rounded-lg bg-emerald-150 dark:bg-emerald-800 md:dark:bg-emerald-900  dark:border-emerald-700 text-sm desktop:text-base"> 
+                        <li class="mt-5 ml-0.5 size-6 desktop:size-8" style="background-color: rgb(200, 218, 212);"></li>
+                        <li class="mt-5 ml-5 size-6 desktop:size-8 " style="background-color: aquamarine;"></li>
+                        <li class="mt-5 ml-5 size-6 desktop:size-8 " style="background-color: aquamarine;"></li>
                     </ul>
                     <div class="text-xs">
                         © 2024 BrioAmarta, Inc. All Rights Reserved
@@ -163,7 +173,6 @@
                 </div>
             </div>
         </div>
-    </div>   
-    </div>
+    </div>    
 </body>
 </html>
