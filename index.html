@@ -167,6 +167,20 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
+    <script>
+        // JavaScript to toggle navbar visibility
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.querySelector('[data-collapse-toggle]');
+            const target = document.getElementById(button.getAttribute('aria-controls'));
+    
+            button.addEventListener('click', function () {
+                const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+                this.setAttribute('aria-expanded', !expanded);
+                target.classList.toggle('hidden');
+            });
+        });
+    </script>
+        
 </body>
 </html>
